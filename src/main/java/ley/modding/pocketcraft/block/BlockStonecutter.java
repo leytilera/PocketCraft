@@ -17,6 +17,7 @@ public class BlockStonecutter extends Block {
         super(Material.rock);
         setBlockName("stonecutter");
         setCreativeTab(CreativeTabs.tabDecorations);
+        setHardness(3.5F);
     }
 
     @Override

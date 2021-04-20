@@ -11,6 +11,7 @@ public class BlockNetherReactor extends Block {
         super(Material.iron);
         setBlockName("reactor");
         setCreativeTab(CreativeTabs.tabDecorations);
+        setHardness(3.5F);
     }
 
     @Override
