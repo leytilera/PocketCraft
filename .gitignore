@@ -2,3 +2,8 @@
 .idea
 build
 run
+.project
+.settings
+.classpath
+build.hxml
+bin
