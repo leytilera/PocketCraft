@@ -1,6 +1,9 @@
 buildscript {
     repositories {
-        mavenLocal()
+        maven {
+            name = "tilera"
+            url = "https://maven.tilera.xyz"
+        }
         mavenCentral()
         maven {
             name = "forge"
@@ -15,14 +18,14 @@ buildscript {
         classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
             changing = true
         }
-        classpath ('net.anvilcraft.gradlehaxe:net.anvilcraft.gradlehaxe.gradle.plugin:0.1.0') {
+        classpath ('net.anvilcraft:gradlehaxe:0.1.0') {
             changing = true
         }
     }
 }
 
 apply plugin: 'forge'
-apply plugin: 'net.anvilcraft.gradlehaxe'
+apply plugin: 'haxe'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
